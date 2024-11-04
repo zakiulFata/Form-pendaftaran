@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="styles/style_form.css">
+</head>
+    <body>
+        <form action="proses_data.php" method="post">
+            <label for="nama">Nama Team : </label>
+            <input type="text" id="nama" name="nama" required>
+        
+            <label for="email">Cabang Olahraga : </label>
+            <input type="text" id="cabor" name="cabor" required>
+        
+            <label for="nomor">No Telpon / Wa : </label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label>Status</label>
+                <div class="radio-group">
+                    <input type="radio" id="pelajar" name="Status" value="pelajar">
+                    <label for="pelajar">Pelajar</label>
+
+                    <input type="radio" id="mahasiswa" name="Status" value="mahasiswa">
+                    <label for="mahasiswa">Mahasiswa</label>
+                        
+                    <input type="radio" id="pekerja" name="Status" value="pekerja">
+                    <label for="pekerja">Pekerja</label>
+
+
+                </div>
+                <label for="pesan">List Nama Anggota Tim :</label>
+                <textarea name="pesan" id="pesan" rows="3" placeholder="TUuliskan pesan atau komentar anda"></textarea>
+            <button onclick="kirim()" type ="submit">Kirim</button>
+    </form>
+    <script>
+        function kirim() {
+            window.location.href = 'landingPage.html';
+            alert('form anda telah terkirim');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla+Tamil+Inclined:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="nav-link">
+        <h1>Pekan Olahraga Mahasiswa</h1>
+        <button >Home</button>
+        <button onclick="tentang()">About</button>
+        <button onclick="kontak()">Contact</button>
+        <button onclick="service()">Service</button>
+    </nav>
+       
+    <main>
+        <div class="content">
+            <article>
+                <h2>Informasi lomba</h2>
+                <p>Ayo ikuti ajang lomba olahraga yang paling bergengsi yang pernah ada, Hadiahnya mulai 
+                    dari Piala, Medali, Sertifikat dan juga Uang tunai, Pendaftaran dibuka 01 sampai 11-11-2011, 
+                    dimana cabang olahraga yang diperlombakan antara lain : sepak bola, futsal, badminton, tenis, tenis meja, renang, basket. 
+                </p>
+
+            </article>
+            <article>
+                <h2>Syarat dan ketentuan</h2>
+                <ol>
+                    <li>Mempunyai Tim(untuk cabor Tertentu) dan KTP(Wajib untuk semua cabor)</li>
+                    <li>Tiap tim per cabor wajib membayar uang pendaftaran sesuai dengan cabor yang di ikuti</li>
+                    <li>Pendaftaran dilakukan oleh satu orang saja dan listkan nama anggotanya</li>
+                    <li>Perlombaan dimulai dari tanggal 12-20 November</li>
+                    <li>wajib mengikuti prosedur yang berlaku (Bagi tim yang melanggar akan didiskualifikasi)</li>
+                    <li>Hadiah berupa Piala, Medali, Uang tunai, dan Sertifikat</li>
+                </ol>
+                <p>
+                    Ayo join segera dan daftar kan tim kesayanganmu sebelum pendaftaran di tutup!!</p>
+            </article>
+        </div>
+        <section>
+            <aside>
+                <img src="styles/image.jpg">
+            </aside>
+            <div class="daftar"><button onclick="regist()"><b>Regist Now</b></button></div>
+        </section>
+    </main>
+        <footer>
+            <p>Tugas praktikum  &copy; Zakiul Fata 2024</p>
+                <p>           
+                    Info lebih lanjut hubungi :
+                </p>
+                <ul class="info">
+                    <li><a href="tel:+6285373450429"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+                    <li><a href="mailto:zakiulfata292@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="https://www.instagram.com/zakiul_fataa"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>  
+        </footer>
+        <script>
+        function regist() {
+            window.location.href = "formPendaftaran.html"
+        }
+
+
+
+        function tentang() {
+            window.location.href = "service.html"
+            alert('Elzio Liat Mama!!')
+        }
+        function kontak() {
+            window.location.href = "service.html"
+            alert('Elzio Liat Mama!!')
+        }
+        function service() {
+            window.location.href = "service.html"
+            alert('Elzio Liat Mama!!')
+        }
+        </script>
+</body>
+</html>
